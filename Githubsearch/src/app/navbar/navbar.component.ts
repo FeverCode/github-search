@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from '../profile.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  profile: any = { login: '',
+    company: '',
+    location: '',
+    avatar_url: '',
+    public_repos: '',
+    public_gist: '',
+    followers: '',
+    following: '',
+    email: '',
+    bio: '',
+    created_at: ''};
+  repos: any;
+  username!: string;
 
-  ngOnInit(): void {
+
+  constructor(private service: ProfileService) {
+    this.service.getProfileInfo().subscribe(profile => {
+      console.log(profile);
+      this.profile = profile;
+    });
+    this.service.getProfileRepos().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
+    });
+
+
+  }
+
+  findProfile() {
+    this.service.updateProfile(this.username);
+    this.service.getProfileInfo().subscribe(profile => {
+      console.log(profile);
+      this.profile = profile;
+    });
+    this.service.getProfileRepos().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
+    });
+  }
+
+  ngOnInit() {
+
   }
 
 }
