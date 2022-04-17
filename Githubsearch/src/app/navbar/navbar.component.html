@@ -1,22 +1,17 @@
-<nav  class="navbar navbar-inverse navbar-fixed-top" style="height: 7%;">
-    <div class="container">
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-            aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-      </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <a style="list-style: none;" class="navbar-brand" href="#"></a>
-
-            <ul class="navbar-nav">
-              
-                <!-- <li><form action=""><div class="form-group"><input type="text" style="margin-top: 7%;  width: 130%; height: 15%;background-color: rgb(70, 68, 68); border: none; color: ghostwhite;" class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus  " placeholder="search or jump to" [(ngModel)]="username" name="username"  (keyup.Enter)="findProfile()"></div></form></li> -->
-            </ul>
-        </div>
-       
+<nav class="navbar navbar-expand-md navbar-dark bg-success">
+  <div class="container-fluid d-flex justify-content-between">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand fs-3 fw-bold" routerLink="/">Githubsearch</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     </div>
-</nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav fs-6 fw-bolder">
+        <li class="nav-item">
+          <a class="nav-link active rounded" aria-current="page" routerLink="/" routerLinkActive='active'>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active rounded" aria-current="page" routerLink="/about" routerLinkActive='active'>About</a>
+        </li>
+      </ul>
