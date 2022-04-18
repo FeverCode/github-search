@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileService } from './profile.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LinkHighlighterDirective } from './link-highlighter.directive';
 
 
 
@@ -19,6 +20,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     ProfileComponent,
     AboutComponent,
     NavbarComponent,
+    LinkHighlighterDirective,
     
     
     
