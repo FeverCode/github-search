@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileService } from './profile.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -19,6 +20,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     ProfileComponent,
     AboutComponent,
     NavbarComponent,
+    PageNotFoundComponent,
     
     
     
