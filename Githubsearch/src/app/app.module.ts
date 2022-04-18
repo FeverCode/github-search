@@ -10,8 +10,6 @@ import { AboutComponent } from './about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileService } from './profile.service';
 import { NavbarComponent } from './navbar/navbar.component';
-
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LinkHighlighterDirective } from './link-highlighter.directive';
 
 
@@ -23,7 +21,6 @@ import { LinkHighlighterDirective } from './link-highlighter.directive';
     ProfileComponent,
     AboutComponent,
     NavbarComponent,
-    PageNotFoundComponent,
     LinkHighlighterDirective,
     
     
