@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: ProfileComponent },
   { path: 'about', component: AboutComponent },
   { path: '',   redirectTo: '/profile', pathMatch: 'full' },
-  { path: '**', component: PageNotFoundComponent }
+  { path: '**', component: ProfileComponent }
 ];
 
 @NgModule({
