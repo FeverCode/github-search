@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
+import { User } from '../user';
 
 @Component({
   selector: 'app-profile',
@@ -7,19 +8,11 @@ import { ProfileService } from '../profile.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  profile: any = { login: '',
-    company: '',
-    location: '',
-    avatar_url: '',
-    public_repos: '',
-    public_gist: '',
-    followers: '',
-    following: '',
-    email: '',
-    bio: '',
-    created_at: ''};
+  profile: any;
   repos: any;
   username!: string;
+  user!: User;
+  
 
 
   constructor(private service: ProfileService) {
