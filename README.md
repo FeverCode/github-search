@@ -23,7 +23,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <P>Below is the live link to the project</P>
 
-[Github-Search]()
+[Github-Search](https://fevercode.github.io/github-search/)
 
 ## Installation
 - Clone  or download and unzip the repository from github, [https://github.com/FeverCode/github-search].
