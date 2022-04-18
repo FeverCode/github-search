@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Repo } from './repo';
 
 
 
 @Injectable()
 export class ProfileService {
+  repos!: Repo;
+  username!: string;
+  clientid!: string;
+  clientsecret!: string;
 
-  private username: string;
-  private clientid = '7d6ef4cb6effb6013d6f';
-  private clientsecret = '2f4cbc12215530d96bdd0bd20fbffdead67d46fa';
 
 
   constructor(private http:  HttpClient) {
