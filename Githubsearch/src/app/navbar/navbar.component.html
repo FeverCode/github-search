@@ -20,6 +20,9 @@
       <ul class="navbar-nav">
               
                 <li><form action=""><div class="form-group ms-4"><input type="text" style="margin-top: 7%;  width: 130%; height: 15%;background-color: rgb(70, 68, 68); border: none; color: ghostwhite;" class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus  " placeholder="search or jump to" [(ngModel)]="username" name="username"  (keyup.Enter)="findProfile()"></div></form></li>
+                <li class="nav-item">
+          <a class="nav-link active rounded text-info" aria-current="page" routerLink="/result" routerLinkActive='active'>Result</a>
+        </li>
             </ul>
     </div>
   </div>
